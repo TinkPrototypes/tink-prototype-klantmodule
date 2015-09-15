@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js has-nav-left {{theme.active}}" data-ng-class="{'front-page': !sidenav.visible}" data-ng-app="tinkApp" data-ng-controller="MainCtrl">
+ <head>
+    <meta charset="utf-8">
+    <title>Tink prototype skeleton</title>
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/prototype.css -->
+    <link rel="stylesheet" href="styles/prototype.css">
+    <!-- endbuild -->
+  </head>
+  <body data-ng-swipe-right="openMenu()" data-ng-swipe-left="closeMenu()">
+  <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <nav data-tink-top-nav data-ng-include=" 'views/top-nav.html' " class="nav-top"></nav>
+
+  <div data-tink-nav-aside data-auto-select="true" data-toggle-id="sideNav1" data-ng-include=" 'views/sidenav.html' " class="nav-left nav-aside"></div>
+
+  <div class="main" role="main" data-ng-view="" data-autoscroll="true"></div>
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,src}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <!-- endbuild -->
+
+  </body>
+</html>
