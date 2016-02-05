@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('tinkApp')
- .controller('MainCtrl', function ($scope) {
+ .controller('MainCtrl', ['$scope', function ($scope) {
 
- 	$scope.hello = "Hello!";
+ 	$scope.hello = 'Hello!';
 
-});
+}]);
 
