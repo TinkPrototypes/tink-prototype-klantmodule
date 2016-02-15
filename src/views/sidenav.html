@@ -3,10 +3,17 @@
     <p class="nav-aside-title">Prototype</p>
     <ul>
       <li>
-        <a href="#/"><span>Menu</span></a>
+        <a ui-sref="main"><span>Main</span></a>
         <ul>
-          <li><a href="#/"><span>Submenu 1</span></a></li>
-          <li><a href="#/"><span>Submenu 2</span></a></li>
+          <li><a ui-sref="main.uno"><span>Main uno</span></a></li>
+          <li><a ui-sref="main.due"><span>Main due</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <a ui-sref="secondary"><span>Secondary</span></a>
+        <ul>
+          <li><a ui-sref="secondary.uno"><span>Secondary uno</span></a></li>
+          <li><a ui-sref="secondary.due"><span>Secondary due</span></a></li>
         </ul>
       </li>
     </ul>
